@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+}
+
+.lower-line-through {
+  position: relative;
+}
+
+.lower-line-through::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 45%;
+  height: 1px;
+  background-color: currentColor;
+}
+
+button {
+  transition: all 0.2s ease-in-out;
+}
